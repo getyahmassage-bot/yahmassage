@@ -367,7 +367,7 @@
   /* FLOATING MESSENGER BUTTON - RIGHT SIDE */
   .floating-messenger {
     position: fixed;
-    right: 20px;
+    right: 140px; /* Adjusted to clear the vertical banner */
     bottom: 100px;
     z-index: 99;
     display: flex;
@@ -497,7 +497,7 @@
       padding: 14px 18px;
     }
     .floating-messenger {
-      right: 16px;
+      right: 100px; /* Adjusted for mobile to clear the narrower banner */
       bottom: 90px;
       padding: 12px 16px;
       font-size: 14px;
@@ -528,7 +528,7 @@
 
 <!-- TOAST NOTIFICATION -->
 <div class="toast-notification" id="promoToast">
-  <span class="toast-emoji">💆♀️</span>
+  <span class="toast-emoji"></span>
   <span>Feeling relaxed? Book your slot now!</span>
 </div>
 
@@ -546,7 +546,7 @@
 <!-- NAV -->
 <nav>
   <div class="logo">
-    <span class="logo-emoji">💆♀️</span> <span class="logo-yah">yaahhh</span>
+    <span class="logo-emoji">💆</span> <span class="logo-yah">yaahhh</span>
   </div>
   <div class="nav-links">
     <button data-page="services">Services</button>
@@ -559,7 +559,7 @@
   <div class="hero">
     <div class="logo-bounce">
       <div class="logo-wiggle">
-        <span class="hero-logo-emoji">💆‍♀️</span>
+        <span class="hero-logo-emoji">💆</span>
       </div>
     </div>
     
@@ -585,7 +585,7 @@
       <p>Safe, private &amp; exclusively for women</p>
     </div>
     <div class="feature">
-      <h3>💆‍♀️ Full Body Massage</h3>
+      <h3>💆 Full Body Massage</h3>
       <p>Relax, unwind &amp; rejuvenate every muscle</p>
     </div>
     <div class="feature">
@@ -608,7 +608,7 @@
 
   <div class="service-card">
     <div class="service-head">
-      <h3>💆‍♀️ Full Body Massage</h3>
+      <h3>💆 Full Body Massage</h3>
       <span class="price">₹399</span>
     </div>
     <p>Complete relaxation therapy — head to toe</p>
@@ -616,7 +616,7 @@
 
   <div class="service-card">
     <div class="service-head">
-      <h3>🧴 Oil Massage</h3>
+      <h3> Oil Massage</h3>
       <span class="price">₹499</span>
     </div>
     <p>Premium aromatic oils for deep nourishment</p>
@@ -624,7 +624,7 @@
 
   <div class="service-card">
     <div class="service-head">
-      <h3> Premium Spa</h3>
+      <h3>💎 Premium Spa</h3>
       <span class="price">₹799</span>
     </div>
     <p>Luxury spa experience at your home</p>
@@ -673,7 +673,7 @@
       <div>📍 Mumbai &amp; nearest areas</div>
       <div>👩 Service for females only</div>
       <div>💸 Starting at ₹399</div>
-      <div> Available 9 AM – 9 PM</div>
+      <div>🕐 Available 9 AM – 9 PM</div>
       <div>🏠 Home service only</div>
     </div>
   </div>
@@ -736,17 +736,11 @@ navBtns.forEach(btn=>{
   });
 });
 
-/* ========== 3-SECOND CONTINUOUS HAPTIC SHAKE VIBRATION ========== */
-let vibrationReady = false;
+/* ========== 3-SECOND CONTINUOUS HAPTIC SHAKE VIBRATION AT 23 SECONDS ========== */
 let vibrationTriggered = false;
 
-// Enable vibration logic after 11 seconds
 setTimeout(() => {
-  vibrationReady = true;
-}, 11000);
-
-function attemptVibration() {
-  if (vibrationReady && !vibrationTriggered) {
+  if (!vibrationTriggered) {
     vibrationTriggered = true;
 
     // 1. Hardware Vibration (3 seconds continuous)
@@ -757,7 +751,7 @@ function attemptVibration() {
     // 2. Visual Screen Shake (3 seconds continuous)
     document.body.style.animation = 'intenseShake3s 3s ease-in-out';
     
-    // Remove animation after 3 seconds so it doesn't interfere later
+    // Remove animation after 3 seconds
     setTimeout(() => {
         document.body.style.animation = '';
     }, 3000);
@@ -771,12 +765,7 @@ function attemptVibration() {
       }, 6000);
     }
   }
-}
-
-// Listen for user interactions to bypass mobile browser restrictions
-window.addEventListener('touchstart', attemptVibration, { passive: true });
-window.addEventListener('mousedown', attemptVibration, { passive: true });
-window.addEventListener('scroll', attemptVibration, { passive: true });
+}, 23000); // Triggers exactly at 23 seconds
 </script>
 </body>
 </html>
