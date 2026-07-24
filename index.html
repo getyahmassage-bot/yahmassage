@@ -70,13 +70,13 @@
     font-size: 26px; 
     letter-spacing: 0.5px;
   }
-  /* PEACH COLORED VIBRATING LOGO EMOJI */
+  /* NATURAL SKIN COLOR VIBRATING LOGO EMOJI */
   .logo-emoji{
     font-size:26px;
     margin-right:6px;
     display:inline-block;
-    color: #E8BEAC;
-    filter: drop-shadow(0 0 6px #E8BEAC) drop-shadow(0 0 12px rgba(232,190,172,0.6));
+    color: #FAD6B1; /* Natural body skin color */
+    filter: drop-shadow(0 0 6px #FAD6B1) drop-shadow(0 0 12px rgba(250,214,177,0.6));
     animation: logoVibrate 0.3s linear infinite;
   }
   @keyframes logoVibrate{
@@ -98,7 +98,7 @@
   /* PAGES */
   .page{
     min-height:100vh;
-    padding:90px 22px 120px;
+    padding:90px 22px 0px; /* Adjusted padding for footer sky */
     display:none;
     position:relative;
     z-index:1;
@@ -132,7 +132,7 @@
   .hero::before{
     content:"";
     position:absolute;inset:0;
-    background:radial-gradient(circle at 50% 30%, rgba(232,190,172,0.12), transparent 60%);
+    background:radial-gradient(circle at 50% 30%, rgba(250,214,177,0.12), transparent 60%);
     pointer-events:none;
   }
 
@@ -151,8 +151,8 @@
   .hero-logo-emoji {
     display: inline-block;
     font-size: 120px;
-    color: #E8BEAC;
-    filter: drop-shadow(0 0 20px #E8BEAC) drop-shadow(0 0 40px rgba(232,190,172,0.7));
+    color: #FAD6B1; /* Natural body skin color */
+    filter: drop-shadow(0 0 20px #FAD6B1) drop-shadow(0 0 40px rgba(250,214,177,0.7));
     animation: pulse 1.5s ease-in-out infinite, glow 2s ease-in-out infinite, heroVibrate 0.4s linear infinite;
   }
   @keyframes bounce {
@@ -168,8 +168,8 @@
     50% { transform: scale(1.15); }
   }
   @keyframes glow {
-    0%, 100% { filter: drop-shadow(0 0 20px #E8BEAC) drop-shadow(0 0 40px rgba(232,190,172,0.7)); }
-    50% { filter: drop-shadow(0 0 40px #E8BEAC) drop-shadow(0 0 60px rgba(232,190,172,1)); }
+    0%, 100% { filter: drop-shadow(0 0 20px #FAD6B1) drop-shadow(0 0 40px rgba(250,214,177,0.7)); }
+    50% { filter: drop-shadow(0 0 40px #FAD6B1) drop-shadow(0 0 60px rgba(250,214,177,1)); }
   }
   @keyframes heroVibrate {
     0%   { transform: translate(0,0); }
@@ -206,21 +206,21 @@
   .price-badge{
     display:inline-block;
     padding:12px 26px;
-    border:1px solid rgba(232,190,172,0.4);
+    border:1px solid rgba(250,214,177,0.4);
     border-radius:50px;
     font-size:16px;
     font-weight:600;
     margin-bottom:28px;
-    background:rgba(232,190,172,0.1);
+    background:rgba(250,214,177,0.1);
     backdrop-filter:blur(10px);
     animation:pulseBadge 2s ease-in-out infinite;
     position:relative;
     z-index:2;
-    color: #E8BEAC;
+    color: #FAD6B1;
   }
   @keyframes pulseBadge{
-    0%,100%{box-shadow:0 0 0 0 rgba(232,190,172,0.4)}
-    50%{box-shadow:0 0 0 12px rgba(232,190,172,0)}
+    0%,100%{box-shadow:0 0 0 0 rgba(250,214,177,0.4)}
+    50%{box-shadow:0 0 0 12px rgba(250,214,177,0)}
   }
 
   /* ========== MESSENGER-STYLE BOOK NOW BUTTON ========== */
@@ -278,9 +278,9 @@
     to{opacity:1;transform:translateY(0)}
   }
   .feature:hover{
-    border-color:rgba(232,190,172,0.4);
+    border-color:rgba(250,214,177,0.4);
     transform:translateY(-4px);
-    background:rgba(232,190,172,0.05);
+    background:rgba(250,214,177,0.05);
   }
   .feature h3{font-size:16px;margin-bottom:6px;font-weight:600}
   .feature p{font-size:13px;opacity:0.65}
@@ -304,7 +304,7 @@
     border:1px solid rgba(255,255,255,0.1);
     border-radius:20px;
     margin-bottom:16px;
-    background:linear-gradient(135deg,rgba(232,190,172,0.04),rgba(255,255,255,0.008));
+    background:linear-gradient(135deg,rgba(250,214,177,0.04),rgba(255,255,255,0.008));
     transition:all .4s;
     position:relative;
     overflow:hidden;
@@ -313,24 +313,24 @@
     content:"";
     position:absolute;top:-50%;left:-50%;
     width:200%;height:200%;
-    background:linear-gradient(45deg,transparent,rgba(232,190,172,0.06),transparent);
+    background:linear-gradient(45deg,transparent,rgba(250,214,177,0.06),transparent);
     transform:translateX(-100%);
     transition:transform .8s;
   }
   .service-card:hover::before{transform:translateX(100%)}
-  .service-card:hover{border-color:rgba(232,190,172,0.4);transform:translateY(-3px)}
+  .service-card:hover{border-color:rgba(250,214,177,0.4);transform:translateY(-3px)}
   .service-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
   .service-head h3{font-size:17px;font-weight:600}
-  .service-head .price{font-size:18px;font-weight:700;opacity:0.9; color: #E8BEAC;}
+  .service-head .price{font-size:18px;font-weight:700;opacity:0.9; color: #FAD6B1;}
   .service-card p{font-size:13px;opacity:0.6}
 
   /* CONTACT */
   .contact-box{
     text-align:center;
     padding:40px 24px;
-    border:1px solid rgba(232,190,172,0.2);
+    border:1px solid rgba(250,214,177,0.2);
     border-radius:24px;
-    background:rgba(232,190,172,0.03);
+    background:rgba(250,214,177,0.03);
     margin-bottom:20px;
   }
   .contact-box h2{font-size:24px;margin-bottom:10px}
@@ -390,7 +390,7 @@
   /* FOOTER & FOOTER BANNER */
   footer{
     text-align:center;
-    padding:40px 20px 120px;
+    padding:40px 20px 0px;
     opacity:0.4;
     font-size:12px;
     letter-spacing:0.5px;
@@ -399,6 +399,7 @@
     align-items: center;
     gap: 20px;
     position: relative;
+    width: 100%;
   }
   
   .footer-banner {
@@ -417,6 +418,29 @@
   .footer-content {
     position: relative;
     z-index: 2;
+  }
+
+  /* ANIMATED FOOTER SKY */
+  .footer-sky {
+    width: 100%;
+    height: 140px;
+    margin-top: 120px; /* BIG SPACE */
+    background: linear-gradient(to top, #1a1a2e 0%, #16213e 50%, transparent 100%);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.8;
+  }
+  .cloud {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.7;
+    animation: floatCloud linear infinite;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+  }
+  @keyframes floatCloud {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100vw); }
   }
 
   /* RED HEART ANIMATION */
@@ -448,7 +472,7 @@
     .hero{min-height:580px}
   }
   @media(min-width:900px){
-    .page{padding:110px 60px 140px;max-width:900px;margin:0 auto}
+    .page{padding:110px 60px 0px;max-width:900px;margin:0 auto}
   }
   @media(max-width:480px){
     .messenger-btn{
@@ -528,7 +552,7 @@
   <div class="hero">
     <div class="logo-bounce">
       <div class="logo-wiggle">
-        <span class="hero-logo-emoji">💆</span>
+        <span class="hero-logo-emoji"></span>
       </div>
     </div>
     
@@ -550,7 +574,7 @@
       <p>Professional service in the comfort of your home</p>
     </div>
     <div class="feature">
-      <h3>👩 Females Only</h3>
+      <h3> Females Only</h3>
       <p>Safe, private &amp; exclusively for women</p>
     </div>
     <div class="feature">
@@ -566,6 +590,15 @@
   <footer>
     <div class="footer-content">
       <span>© 2026 Yah Massage • made in <span class="red-heart">❤</span> with mumbai</span>
+    </div>
+    
+    <!-- Animated Sky at the very last -->
+    <div class="footer-sky">
+      <div class="cloud" style="top: 20%; animation-duration: 18s; animation-delay: 0s;">☁️</div>
+      <div class="cloud" style="top: 50%; animation-duration: 25s; animation-delay: -7s; font-size: 45px;">☁️</div>
+      <div class="cloud" style="top: 70%; animation-duration: 14s; animation-delay: -3s; font-size: 28px;">☁️</div>
+      <div class="cloud" style="top: 30%; animation-duration: 22s; animation-delay: -12s; font-size: 38px;">☁️</div>
+      <div class="cloud" style="top: 80%; animation-duration: 16s; animation-delay: -5s; font-size: 32px;">☁️</div>
     </div>
   </footer>
 </section>
@@ -585,8 +618,8 @@
 
   <div class="service-card">
     <div class="service-head">
-      <h3> Oil Massage</h3>
-      <span class="price">₹499</span>
+      <h3>🧴 Oil Massage</h3>
+      <span class="price">499</span>
     </div>
     <p>Premium aromatic oils for deep nourishment</p>
   </div>
@@ -620,6 +653,14 @@
     <div class="footer-content">
       <span>Mumbai &amp; nearby areas only • Prices may vary by location</span>
     </div>
+    
+    <div class="footer-sky">
+      <div class="cloud" style="top: 20%; animation-duration: 18s; animation-delay: 0s;">☁️</div>
+      <div class="cloud" style="top: 50%; animation-duration: 25s; animation-delay: -7s; font-size: 45px;">☁️</div>
+      <div class="cloud" style="top: 70%; animation-duration: 14s; animation-delay: -3s; font-size: 28px;">☁️</div>
+      <div class="cloud" style="top: 30%; animation-duration: 22s; animation-delay: -12s; font-size: 38px;">☁️</div>
+      <div class="cloud" style="top: 80%; animation-duration: 16s; animation-delay: -5s; font-size: 32px;">☁️</div>
+    </div>
   </footer>
 </section>
 
@@ -640,7 +681,7 @@
 
     <div class="info-list">
       <div>📍 Mumbai &amp; nearest areas</div>
-      <div>👩 Service for females only</div>
+      <div> Service for females only</div>
       <div>💸 Starting at ₹399</div>
       <div>🕐 Available 9 AM – 9 PM</div>
       <div>🏠 Home service only</div>
@@ -650,6 +691,14 @@
   <footer>
     <div class="footer-content">
       <span>© 2026 Yah Massage • made in <span class="red-heart">❤</span> with mumbai</span>
+    </div>
+    
+    <div class="footer-sky">
+      <div class="cloud" style="top: 20%; animation-duration: 18s; animation-delay: 0s;">☁️</div>
+      <div class="cloud" style="top: 50%; animation-duration: 25s; animation-delay: -7s; font-size: 45px;">☁️</div>
+      <div class="cloud" style="top: 70%; animation-duration: 14s; animation-delay: -3s; font-size: 28px;">☁️</div>
+      <div class="cloud" style="top: 30%; animation-duration: 22s; animation-delay: -12s; font-size: 38px;">☁️</div>
+      <div class="cloud" style="top: 80%; animation-duration: 16s; animation-delay: -5s; font-size: 32px;">☁️</div>
     </div>
   </footer>
 </section>
