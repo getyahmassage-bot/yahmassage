@@ -1,14 +1,20 @@
 {
   "name": "Yah Massage",
-  "short_name": "Yah Massage",
+  "short_name": "FOMO",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#6d4aff",
   "icons": [
     {
-      "src": "/favicon-192x192.png",
+      "src": "/favicon-192x192.png?v=2",
       "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32x32.png?v=2",
+      "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
     }
