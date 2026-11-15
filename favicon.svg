@@ -1,7 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<rect width="512" height="512" rx="112" fill="#08020a"/>
-<circle cx="256" cy="256" r="224" fill="none" stroke="#ff008c" stroke-width="12"/>
-<circle cx="256" cy="256" r="207" fill="none" stroke="#7d063f" stroke-width="4"/>
-<text x="226" y="365" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="bold" font-size="340" fill="#ffc642">Y</text>
-<path d="M355 112 C315 72 260 119 355 205 C450 119 395 72 355 112Z" fill="#ff1493"/>
+<defs>
+ <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#260018"/><stop offset=".62" stop-color="#09000b"/><stop offset="1" stop-color="#020105"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0a6"/><stop offset=".38" stop-color="#ffbd35"/><stop offset=".7" stop-color="#d87900"/><stop offset="1" stop-color="#fff0a6"/></linearGradient>
+ <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9ce7"/><stop offset=".45" stop-color="#ff168d"/><stop offset="1" stop-color="#8c0057"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="512" height="512" rx="104" fill="url(#bg)"/>
+<circle cx="256" cy="246" r="220" fill="none" stroke="url(#pink)" stroke-width="13" filter="url(#glow)"/>
+<circle cx="256" cy="246" r="204" fill="none" stroke="url(#gold)" stroke-width="5"/>
+<!-- abstract intimate embracing silhouettes -->
+<path d="M105 205c5-70 57-113 117-101 40 8 67 43 68 86-16-18-35-23-52-14-17 9-22 30-36 43-19 18-48 17-70 32-20 14-28 36-25 65-28-25-14-78-2-111z" fill="#170714" stroke="url(#pink)" stroke-width="5"/>
+<path d="M407 205c-5-70-57-113-117-101-40 8-67 43-68 86 16-18 35-23 52-14 17 9 22 30 36 43 19 18 48 17 70 32 20 14 28 36 25 65 28-25 14-78 2-111z" fill="#170714" stroke="url(#pink)" stroke-width="5"/>
+<path d="M178 184c13 37 36 55 78 58 42-3 65-21 78-58-1 55-27 92-78 103-51-11-77-48-78-103z" fill="#08030a" stroke="url(#gold)" stroke-width="4"/>
+<path d="M195 282c18 20 38 29 61 29s43-9 61-29" fill="none" stroke="url(#pink)" stroke-width="8" stroke-linecap="round"/>
+<path d="M256 335c-24-24-59-46-59-75 0-20 24-30 41-14l18 18 18-18c17-16 41-6 41 14 0 29-35 51-59 75z" fill="url(#pink)" opacity=".95" filter="url(#glow)"/>
+<text x="256" y="425" text-anchor="middle" font-family="Georgia,serif" font-size="88" font-style="italic" font-weight="bold" letter-spacing="-5" fill="url(#gold)" stroke="#5a2100" stroke-width="2" paint-order="stroke">yahhhh</text>
 </svg>
