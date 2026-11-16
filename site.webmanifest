@@ -1,6 +1,6 @@
 {
-  "name": "yahhhh",
-  "short_name": "yahhhh",
+  "name": "yah",
+  "short_name": "yah",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -8,10 +8,10 @@
   "theme_color": "#08020a",
   "icons": [
     {
-      "src": "/favicon.svg?v=8",
+      "src": "/favicon.svg?v=9",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }
